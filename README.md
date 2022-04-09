@@ -13,3 +13,7 @@ Design of multiplatform apps assignature project
 * Pipes
 * Bindings
 * Directives
+
+
+## Class 3
+*Reactive forms
