@@ -2,4 +2,10 @@
 <h1>nombre: {{nombre}}</h1>
 <input [(ngModel)] = "texto">
 <h2>{{texto}}</h2>
+<h1>{{listadoServ.getDispositivos() |json |uppercase}}</h1>
+<h1 *ngIf="deshabilitado">{{2 | nombre: 10}}</h1>
+<h1>{{2 | nombre}}</h1>
+<div *ngFor="let elemento of miArray">
+   <p appDirectivaattr> {{elemento.nombre}} </p>
+</div>
 <button [disabled]="deshabilitado" (click)="cambiarValor()">Super button</button>

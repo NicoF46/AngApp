@@ -6,3 +6,10 @@ Design of multiplatform apps assignature project
 * Frameworks SPA
 * Modules
 * Components(view- style- controller -unit test)
+* Bindings
+
+## Class 2
+* Services
+* Pipes
+* Bindings
+* Directives
