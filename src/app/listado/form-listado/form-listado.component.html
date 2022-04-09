@@ -1,0 +1,25 @@
+<p>form-listado works!</p>
+<form [formGroup]="formDispositivo" (ngSubmit)="guardarDispositivo()">
+    <div>
+        <label>Nombre</label>
+        <input formControlName="nombre" name="nombre" />
+    </div>
+    <div class="error" *ngIf="formDispositivo.controls['nombre'].invalid && formDispositivo.controls['nombre'].dirty">
+        El nombre es requerido.
+    </div>
+    <div>
+        <label>Ubicacion</label>
+        <input formControlName="ubicacion" name="ubicacion" />
+        <div class="error"
+            *ngIf="formDispositivo.controls['ubicacion'].invalid && formDispositivo.controls['ubicacion'].dirty">
+            La ubicacion es requerido.
+        </div>
+    </div>
+    <div>
+        <label>Email</label>
+        <input formControlName="email" name="email" />
+    </div>
+    <button type="submit" [disabled]="formDispositivo.invalid">
+        Guardar
+    </button>
+</form>

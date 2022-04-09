@@ -1,0 +1,10 @@
+.error{
+    color: red;
+}
+.ng-valid, .ng-valid.required  {
+    border-right: 8px solid #00f70c; /* green */
+  }
+  
+.ng-invalid:not(form)  {
+    border-right: 8px solid #a94442; /* red */
+  }
